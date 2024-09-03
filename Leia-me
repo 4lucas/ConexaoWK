@@ -1,0 +1,15 @@
+Crie um app no Dropbox
+https://www.dropbox.com/developers/apps/create
+
+Na aba Settings, procure a opção "Generated access token", clique para gerar e copie o token gerado.
+
+Na aba Permissions, dê permissão total em:
+-Account Info
+-Files and folders
+
+Execute o PowerShell como administrador e, execute o comando abaixo:
+rundll32.exe sysdm.cpl,EditEnvironmentVariables
+
+Em "Variáveis do sistema", clique em "Novo..." e então:
+Nome da variável: DropBoxAccessToken
+Valor da variável: "token do Dropbox"
